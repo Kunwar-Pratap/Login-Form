@@ -21,7 +21,7 @@ body {
     margin: 0;
     padding: 0 25px;
     font-family: var(--form-font);
-    background-image: url("bg.svg");
+    background-image: url("/img/bg.svg");
     background-size: cover;
     background-repeat: no-repeat;
     animation: animate 5s infinite alternate linear;
