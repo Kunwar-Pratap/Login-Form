@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --form-font: 'IBM Plex Sans', sans-serif;
+}
+
+html,
+body {
+    height: 100vh;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0 25px;
+    font-family: var(--form-font);
+    background-image: url("bg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: animate 5s infinite alternate linear;
+}
+
+@keyframes animate {
+    100% {
+        background-position: 20% 60%;
+    }
+}
+
+.login-container {
+    width: 100%;
+    padding: 65px 33px 50px;
+    border-radius: 25px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.login-container h2 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 0 0 13px;
+}
+
+.login-container h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.35);
+    margin: 0 0 32px;
+}
+
+@media (width >=500px) {
+    .login-container {
+        width: 400px;
+    }
+}
+
+.login-dock {
+    display: grid;
+    gap: 17px;
+    width: 100%;
+    margin: 0;
+}
+
+.login-dock a {
+    color: #147df5;
+    text-decoration: none;
+    text-align: start;
+    padding: 0 2px;
+    cursor: pointer;
+}
+
+.login-dock input {
+    height: 50px;
+    width: 100%;
+    padding: 0 17px;
+    border: 2px solid #e8e7e7;
+    border-radius: 7px;
+    outline: none;
+    font-family: var(--form-font);
+    font-size: 15px;
+}
+
+.login-dock button {
+    border-radius: 7px;
+    height: 48px;
+    width: 100%;
+    background-color: #147df5;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: var(--form-font);
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    margin-top: 9px;
+    cursor: pointer;
+}
+
+.login-dock button:hover {
+    background-color: #0f71e1;
+}
